@@ -8,8 +8,9 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
+    
 }
 
 ul {
@@ -19,4 +20,36 @@ ul {
 a {
     text-decoration: none;
     color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+nav a {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+nav a:last-child {
+    background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+    border: 1px solid #4285f4;
+    
+    color: white;
+    font-weight: bold;
+    border-radius: 1px;
+    
+}
+
+nav a:last-child:hover {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+    text-decoration: none;
 }
